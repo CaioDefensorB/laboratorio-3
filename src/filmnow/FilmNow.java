@@ -9,14 +9,17 @@ package filmnow;
 public class FilmNow {
 
     private static final int TAMANHO = 100;
+    private static final int TamanhoHot = 10;
 
     private String[] filmes; //uma representacao simploria da lista de filmes
+    private String[] filmesHot;
 
     /**
      * Cria o FilmNow.
      */
     public FilmNow() {
         this.filmes = new String[TAMANHO];
+        this.filmesHot = new String[TamanhoHot];
     }
 
     /**
@@ -46,5 +49,13 @@ public class FilmNow {
     public void cadastraFilme(int posicao, String nome, String ano, String local) {
         this.filmes[posicao] = nome;
     }
+
+    public void cadastraFilmeHot(int posicao, String nome, String ano, String local) {
+        this.filmesHot[posicao] = nome;
+    }
+
+    public String[] getFilmesHot() { return this.filmesHot.clone(); }
+
+    public boolean RemoveHot()
 
 }
