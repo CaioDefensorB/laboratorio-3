@@ -56,6 +56,8 @@ public class FilmNow {
 
     public String[] getFilmesHot() { return this.filmesHot.clone(); }
 
-    public boolean RemoveHot()
+    public boolean RemoveHot() {
+
+    }
 
 }
